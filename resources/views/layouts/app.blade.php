@@ -38,6 +38,20 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+
+                            </li>
+                            <li class="nav-item">
+                              
+                                <a class="nav-link" href="/services">Services</a>
+                         
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link" href="/about">About</a>
+                            </li>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
@@ -72,7 +86,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 container">
             @yield('content')
         </main>
     </div>
