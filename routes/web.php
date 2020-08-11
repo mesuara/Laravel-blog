@@ -18,20 +18,22 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', 'PagesController@index');
-Route::get('/hello', function(){
-    return "<h1>Hello world</h1>";
-});
-Route::get('/about', function(){
-    return view('pages.about');
-});
+Route::get('/about', 'PagesController@about');
+Route::get('/services', 'PagesController@services');
+// Route::get('/hello', function(){
+//     return "<h1>Hello world</h1>";
+// });
+// Route::get('/about', function(){
+//     return view('pages.about');
+// });
 
-Route::get('/users/{id}', function($id){
-    return 'this is a user ' . $id;
-});
-// Auth::routes();
+// Route::get('/users/{id}', function($id){
+//     return 'this is a user ' . $id;
+// });
+Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 
-// Auth::routes();
+Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
