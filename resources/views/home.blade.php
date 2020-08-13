@@ -13,7 +13,28 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                    <a href='/posts/create' class='btn btn-primary'>Create Post</a>
+                    <h3>Your bolg post</h3>
+                    @if(count($posts)> 0)
+                    <table class='table table-striped'>
+                    <tr>
+                        <th>Title</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    @foreach($posts as $post)
+                    <tr>
+                        <th>{{$posts->title}}</th>
+                        <th><a href='/posts/{{$post->id}}/edit' class='btn btn-defaule'>Edit</a></th>
+                        <th></th>
+                    </tr>
+                    @endforeach
+                    </table>
 
+                    @else
+
+                        <p> You have no posts</p>
+                    @endif
                     {{ __('You are logged in!') }}
                 </div>
             </div>

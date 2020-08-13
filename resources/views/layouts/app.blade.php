@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-inverse bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -33,6 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+
                     <li class="nav-item">
                                 <a class="nav-link" href="/posts/create">Add Post</a>
 
@@ -42,7 +43,8 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                        <!-- Authentication Links -->
+                        <li class="nav-item">
                                 <a class="nav-link" href="/">Home</a>
 
                             </li>
@@ -60,7 +62,6 @@
 
                                 <a class="nav-link" href="/posts">Blog</a>
                             </li>
-                        <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -93,11 +94,12 @@
                 </div>
             </div>
         </nav>
-
-        <main class="py-4 container">
+        <div class='container'>
         @include('inc.messages')
+        <main class="py-4">
             @yield('content')
         </main>
+        </div>
     </div>
 </body>
 </html>
