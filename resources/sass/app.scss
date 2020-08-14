@@ -11,8 +11,28 @@
     margin: 0;  
     padding: 0;  
     border: 0; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+body{
+    // background-color: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(177deg, rgba(0,0,0,1) 44%, rgba(114,93,104,1) 100%);    
+    color:#f8fafc;
+}
+.navbar.navbar-expand-md{
+    // background-color: #725D68;
+    background: rgb(0,0,0);
+background: linear-gradient(177deg, rgba(0,0,0,1) 44%, rgba(114,93,104,1) 100%);
+    color:white;
+}
+.nav-link , .navbar-brand{
+    color: white;
+    font-weight: bold;
+}
+.heroBtn{
+    background-color: #297373;
+    color: white;
+}
 
 .bgimage {
     width:100%;
@@ -26,4 +46,48 @@
   .bgimage h5 {
     color:white;
     text-shadow:2px 2px #333;
+  }
+
+  .card {
+    // background-color: #297373;
+    background-color: #725D68;
+    margin-bottom: 15px;
+    border-color:linear-gradient(177deg, rgba(0,0,0,1) 44%, rgba(114,93,104,1) 100%) ;
+  }
+
+ .img-thumbnail {
+    // background-color:#297373;
+    // border:1px solid #297373;
+    background: rgb(0,0,0);
+    background: linear-gradient(177deg, rgba(0,0,0,1) 44%, rgba(114,93,104,1) 100%);
+  }
+
+  .card-deck .card {
+      margin-bottom: 15px;
+      border-color: #9A848F;
+  }
+  .card-footer{
+      border-color: #9A848F;
+  }
+
+  .text-muted{
+      color: whitesmoke !important;
+      text-align: left;
+  }
+
+  footer{
+    background: rgb(0,0,0);
+    // background: linear-gradient(177deg, rgba(0,0,0,1) 44%, rgba(114,93,104,1) 100%);
+        color:white;
+  }
+
+  .card-title a{
+      padding-top: 5px;
+      padding-left: 10px;
+      color:#FF8C61;
+      font-weight: bold;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+   
   }

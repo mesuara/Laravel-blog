@@ -12,15 +12,13 @@
 
 </div> -->
 <section class="bgimage">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h5>Hello, world! Full width Hero-unit header</h5>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a href="#" class="btn btn-primary btn-large">Learn more »</a></p>
+  <!-- <div class="container-fluid"> -->
+    <!-- <div class="row"> -->
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex flex-row justify-content-end" style='height:100%;'>
+       <a href="/about" class="btn heroBtn align-self-end">Learn more »</a>
       </div>
-    </div>
-  </div>
+    <!-- </div> -->
+  <!-- </div> -->
 </section>
 
 <!-- <div class="jumbotron jumbotron-fluid">
@@ -30,8 +28,14 @@
   </div>
 </div> -->
 
+<div class='row'>
+
 </div>
 
+</div>
+
+
+<br>
 @if(count($posts)>0)
 
 <div class='container'>
@@ -62,11 +66,12 @@
   <!-- </div>
 </div>
  </div> -->
-<div class='col-4'>
+<div class='col-4 col-md-6 col-sm-12'>
   <div class="card ">
+  <h2 class="card-title"><a href="/posts/{{$post->id}}">{{$post->title}} </a></h2>
     <img class="card-img-top img-thumbnail img-fluid" src="/storage/cover_images/{{$post->cover_image}}" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title"><a href="/posts/{{$post->id}}">{{$post->title}} </a></h5>
+      <!-- <h4 class="card-title"><a href="/posts/{{$post->id}}">{{$post->title}} </a></h4> -->
       <p class="card-text">{{$post->body}}</p>
     </div>
     <div class="card-footer">
