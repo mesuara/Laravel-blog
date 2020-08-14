@@ -34,10 +34,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
 
-                    <li class="nav-item">
-                                <a class="nav-link" href="/posts/create">Add Post</a>
 
-                            </li>
 
                     </ul>
 
@@ -48,20 +45,16 @@
                                 <a class="nav-link" href="/">Home</a>
 
                             </li>
-                            <li class="nav-item">
-                              
-                                <a class="nav-link" href="/services">Services</a>
-                         
-                            </li>
+
 
                             <li class="nav-item">
 
                                 <a class="nav-link" href="/about">About</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
 
                                 <a class="nav-link" href="/posts">Blog</a>
-                            </li>
+                            </li> -->
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -72,6 +65,11 @@
                                 </li>
                             @endif
                         @else
+
+                        <li class="nav-item">
+                                <a class="nav-link" href="/posts/create">Add Post</a>
+
+                            </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -94,7 +92,7 @@
                 </div>
             </div>
         </nav>
-        <div class='container'>
+        <div class='container-fluid'>
         @include('inc.messages')
         <main class="py-4">
             @yield('content')
