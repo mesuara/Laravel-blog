@@ -10912,14 +10912,12 @@ a.text-dark:focus {
 }
 
 body {
-  background: black;
-  background: linear-gradient(177deg, black 44%, #725d68 100%);
+  background-image: url(https://images.unsplash.com/photo-1511207538754-e8555f2bc187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2412&q=80);
   color: #f8fafc;
 }
 
 .navbar.navbar-expand-md {
   background: black;
-  background: linear-gradient(177deg, black 44%, #725d68 100%);
   color: white;
 }
 
@@ -10942,6 +10940,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  opacity: 0.8;
 }
 
 .bgimage h5 {
@@ -10950,23 +10949,22 @@ body {
 }
 
 .card {
-  background-color: #725D68;
-  margin-bottom: 15px;
-  border-color: linear-gradient(177deg, black 44%, #725d68 100%);
+  background-color: rgba(1, 11, 19, 0.8);
+  border: none;
 }
 
 .img-thumbnail {
-  background: black;
-  background: linear-gradient(177deg, black 44%, #725d68 100%);
+  border: none;
+  background: #1F1F1F;
 }
 
 .card-deck .card {
   margin-bottom: 15px;
-  border-color: #9A848F;
+  border: none;
 }
 
 .card-footer {
-  border-color: #9A848F;
+  border-color: #3D3D3D;
 }
 
 .text-muted {
@@ -10982,10 +10980,45 @@ footer {
 .card-title a {
   padding-top: 5px;
   padding-left: 10px;
-  color: #FF8C61;
+  color: #F8FAFC;
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.py-4 {
+  padding-top: 0px !important;
+}
+
+.mainInfo {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(248, 250, 252, 0.1);
+}
+
+.mainInfo div h1 {
+  font-size: 5em;
+  text-align: center;
+}
+
+.mainInfo div p {
+  font-size: 2em;
+  text-align: center;
+}
+
+.mainInfo div {
+  width: 50%;
 }
 

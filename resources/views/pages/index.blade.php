@@ -12,21 +12,31 @@
 
 </div> -->
 <section class="bgimage">
-  <!-- <div class="container-fluid"> -->
-    <!-- <div class="row"> -->
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex flex-row justify-content-end" style='height:100%;'>
-       <a href="/about" class="btn heroBtn align-self-end">Learn more »</a>
-      </div>
-    <!-- </div> -->
-  <!-- </div> -->
+
 </section>
 
-<!-- <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Fluid jumbotron</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-  </div>
+<div class='mainInfo'>
+    <br>
+    <div>
+        <h1>About <br>Confeeshirt</h1>
+    </div>
+    <div>
+        <p>This is a blog about shirts/socks/swag collected from tech conferences. The purpose of this blog is to showcase the great companies and say thank you to them this way.</p>
+    </div>
+    <br>
+</div>
+<!-- <div class='row'>
+    <br> -->
+<!-- <div class="d-flex flex-row justify-content-center" style='height:100%;'>
+<div class='col-12'>
+<h2>Confeeshirt</h2>
+</div>
+<div class='col-12'>
+       <a href="/about" class="btn heroBtn align-self-center">Learn more »</a>
+</div>
+      </div>
 </div> -->
+
 
 <div class='row'>
 
@@ -36,13 +46,24 @@
 
 
 <br>
+@php 
+$i =0;
+@endphp
 @if(count($posts)>0)
+
+
 
 <div class='container'>
 
 <div class='row'>
 <div class="card-deck">
     @foreach($posts as $post)
+    @php 
+        $i ++;
+    @endphp
+    @if($i > 3)
+        @break
+    @endif
   
                 <!-- <div class='row'>
                         <div class='col-md-4'>
@@ -85,12 +106,17 @@
     </div>
     </div>
 
+    <br>
       
 
 @else
 
 
 @endif
+
+
+
+
 
 </div>
 @endsection

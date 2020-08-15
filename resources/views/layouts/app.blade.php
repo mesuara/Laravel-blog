@@ -98,7 +98,7 @@
             @yield('content')
         </main>
 
-        <footer >
+        <footer class='fixed-bottom'>
 
         <div class='container-fluid'>
             <br>
