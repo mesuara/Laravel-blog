@@ -30,7 +30,7 @@ class PostsController extends Controller
     {
         // $posts =  Post::orderBy('title','desc')->get();
         // $posts =  Post::all();
-        $posts  = DB::select('SELECT * FROM posts');
+        $posts  = DB::select('SELECT * FROM posts ORDER BY created_at DESC');
         return view('posts.index')->with('posts', $posts);
         //
     }

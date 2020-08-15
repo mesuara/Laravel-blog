@@ -11085,3 +11085,84 @@ footer {
   width: 100%;
 }
 
+/****
+ABOUT PAGE STYLE
+ ****/
+
+#aboutPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(248, 250, 252, 0.1);
+}
+
+.mainAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutText {
+  width: 50%;
+  text-align: center;
+}
+
+.aboutImg {
+  width: 50%;
+  padding: 20px;
+}
+
+.meImg {
+  width: 80%;
+}
+
+.aboutDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.aboutCoding {
+  padding: 20px;
+  font-size: 2em;
+}
+
+.confeeImg {
+  display: flex;
+}
+
+.cImgWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cImgWrap img {
+  width: 50%;
+}
+
+.aboutPizza {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutPizzaText {
+  font-size: 2em;
+  width: 20%;
+}
+
+.imagePizzaGall {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imagePizzaGall img {
+  width: 300px;
+}
+
