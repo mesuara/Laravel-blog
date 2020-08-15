@@ -6,7 +6,10 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-
+#app{
+    display: flex;
+    flex-direction: column;
+}
 *{
     margin: 0;  
     padding: 0;  
@@ -14,12 +17,33 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body{
+    min-height: 100vh;
+    position: relative;
+    // height:100%;
     // background-color: black;
     background-image: url(https://images.unsplash.com/photo-1511207538754-e8555f2bc187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2412&q=80);
     // background: rgb(0,0,0);
     // background: linear-gradient(177deg, rgba(0,0,0,1) 44%, rgba(114,93,104,1) 100%);    
     color:#f8fafc;
    
+}
+/****
+    modified the defualt button to my choice of colors
+ ****/
+.btn {
+    background-color: #297373;
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+.btn:hover{
+    background-color: rgba(41,115,115,0.6);
+    border-color: #297373;
+}
+
+input::placeholder{
+    font-style: italic;
+    
 }
 
 // body::before{
@@ -132,3 +156,29 @@ body{
 .mainInfo div{
     width: 50%;
 }
+
+.latestPostText{
+    font-size: 3em;
+    padding: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #CCCCCC;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+  }
+
+  .login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+      height: 100vh;
+  }
+
+  .login .row{
+  
+    width: 100%;
+  }

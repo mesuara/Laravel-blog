@@ -10904,6 +10904,11 @@ a.text-dark:focus {
   }
 }
 
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10912,8 +10917,41 @@ a.text-dark:focus {
 }
 
 body {
+  min-height: 100vh;
+  position: relative;
   background-image: url(https://images.unsplash.com/photo-1511207538754-e8555f2bc187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2412&q=80);
   color: #f8fafc;
+}
+
+/****
+    modified the defualt button to my choice of colors
+ ****/
+
+.btn {
+  background-color: #297373;
+  color: whitesmoke;
+  border-color: whitesmoke;
+}
+
+.btn:hover {
+  background-color: rgba(41, 115, 115, 0.6);
+  border-color: #297373;
+}
+
+input::-moz-placeholder {
+  font-style: italic;
+}
+
+input:-ms-input-placeholder {
+  font-style: italic;
+}
+
+input::-ms-input-placeholder {
+  font-style: italic;
+}
+
+input::placeholder {
+  font-style: italic;
 }
 
 .navbar.navbar-expand-md {
@@ -11020,5 +11058,30 @@ footer {
 
 .mainInfo div {
   width: 50%;
+}
+
+.latestPostText {
+  font-size: 3em;
+  padding: 20px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #CCCCCC;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.login .row {
+  width: 100%;
 }
 

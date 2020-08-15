@@ -26,14 +26,12 @@
     <br>
 </div>
 
-<div class='row'>
+
 
 </div>
 
-</div>
 
 
-<br>
 
 @if(count($posts)>0)
 
@@ -41,12 +39,13 @@
 
 <div class='container'>
 
-<div class='row'>
+<div class='row justify-content-center'>
+ <h1 class='latestPostText'>Latest blog posts</h1>
 <div class="card-deck">
 {{-- spaghetti code  I know there is a better way to do this but for now going the hard way to show only the last thre --}}
     @foreach($posts as $post)
 
-<div class='col-4 col-md-6 col-sm-12'>
+<div class='col-4 col-md-4 col-sm-12'>
   <div class="card ">
   <h2 class="card-title"><a href="/posts/{{$post->id}}">{{$post->title}} </a></h2>
     <img class="card-img-top img-thumbnail img-fluid" src="/storage/cover_images/{{$post->cover_image}}" alt="Card image cap">
@@ -62,7 +61,9 @@
 
 
     @endforeach
+        <p class='align-self-end'><a href='/posts'>See more posts...</a></p>
     </div>
+    <br>
     </div>
 
     <br>

@@ -98,7 +98,9 @@
             @yield('content')
         </main>
 
-        <footer class='fixed-bottom'>
+
+        </div>
+           <footer class=''>
 
         <div class='container-fluid'>
             <br>
@@ -108,7 +110,7 @@
         </div>
 
         </footer>
-        </div>
     </div>
+         
 </body>
 </html>
