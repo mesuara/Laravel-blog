@@ -25,18 +25,6 @@
     </div>
     <br>
 </div>
-<!-- <div class='row'>
-    <br> -->
-<!-- <div class="d-flex flex-row justify-content-center" style='height:100%;'>
-<div class='col-12'>
-<h2>Confeeshirt</h2>
-</div>
-<div class='col-12'>
-       <a href="/about" class="btn heroBtn align-self-center">Learn more »</a>
-</div>
-      </div>
-</div> -->
-
 
 <div class='row'>
 
@@ -46,9 +34,7 @@
 
 
 <br>
-@php 
-$i =0;
-@endphp
+
 @if(count($posts)>0)
 
 
@@ -57,36 +43,9 @@ $i =0;
 
 <div class='row'>
 <div class="card-deck">
+{{-- spaghetti code  I know there is a better way to do this but for now going the hard way to show only the last thre --}}
     @foreach($posts as $post)
-    @php 
-        $i ++;
-    @endphp
-    @if($i > 3)
-        @break
-    @endif
-  
-                <!-- <div class='row'>
-                        <div class='col-md-4'>
-                                <img src='/storage/cover_images/{{$post->cover_image}}' style="width:100%">
-                        </div>
-                        <div class='col-md-8'>
-                        <li class='list-group-item'>
-                                 <h3><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
-                                 <small>Written on {{$post->created_at}}</small>
 
-                         </li>
-                        </div>
-                </div> -->
-                <!-- <div class="col-sm-6">
-                <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="/storage/cover_images/{{$post->cover_image}}" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title"><a href="/posts/{{$post->id}}">{{$post->title}} </a></h5>
-    <p class="card-text">{{$post->body}}</p> -->
-    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-  <!-- </div>
-</div>
- </div> -->
 <div class='col-4 col-md-6 col-sm-12'>
   <div class="card ">
   <h2 class="card-title"><a href="/posts/{{$post->id}}">{{$post->title}} </a></h2>

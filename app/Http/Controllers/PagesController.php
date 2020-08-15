@@ -14,9 +14,10 @@ class PagesController extends Controller
         // // return view('pages.index', compact('title'));
 
         // return view('pages.index') -> with('title', $title);
-        // $posts  = DB::select('SELECT * FROM posts');
+        $posts  = DB::select('SELECT * FROM posts ORDER BY created_at DESC LIMIT 3' );
+ 
 
-        $posts =  Post::orderBy('created_at','desc')->get();
+        // $posts =  Post::orderBy('created_at','desc')->get();
 
         return view('pages.index')->with('posts', $posts);
         // return view('posts.index');
